@@ -7,7 +7,7 @@
     "build": "tsc",
     "pack": "ncc build",
     "precommit": "lint-staged",
-    "test": "DEBUG=jest eslint **/*.ts && jest --coverage --verbose",
+    "test": "eslint **/*.ts && jest --coverage --verbose",
     "all": "npm run build && npm run precommit && npm run pack && npm test"
   },
   "repository": {
